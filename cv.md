@@ -30,7 +30,7 @@ CV in [PDF](/archive/ifeoma_nwabufo_cv_.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![aims-senegal](images/aims-senegal.png)
+![aims-senegal](/Users/success-vera/Downloads/inwabufo.github.io-master/images/aims-senegal.png)
 </td>
 <td></td>
 <td markdown="1">
