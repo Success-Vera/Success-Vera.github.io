@@ -37,12 +37,14 @@ My name is Ifeoma Veronica Nwabufo. I am currently a student at the [African Mas
 
 ### Research Interests
 My research interests include but not limited to:
+- Application to Machine Learning to health and finance
 - Mathematical Epidemiology
 - Mathematical Modelling
 - Image Analysis
 - Natural Language Processing 
     - Multilingual Question Answering for Low Resource Languages
     - Machine Translation 
+- Financial Mathematics
 
 ---
 
