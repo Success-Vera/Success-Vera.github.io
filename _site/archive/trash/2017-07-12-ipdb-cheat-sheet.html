@@ -1,0 +1,618 @@
+
+
+<!DOCTYPE html>
+<html >
+
+  <head>
+
+    
+    
+
+<meta charset="utf-8"/>
+<meta name="author" content="Ifeoma Veronica Nwabufo"/>
+
+
+<meta name="keywords" content="python"/>
+
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- atom & rss feed -->
+<link href="" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed"/>
+
+<!--
+<link href="" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed"/>
+-->
+
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+    
+	<!--
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ['\(', '\)'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+-->
+    <title>Python Ipdb Cheatsheet - Ifeoma Veronica Nwabufo's Website</title>
+
+    <!-- normalize.css -->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/bower_components/normalize-css/normalize.css" >
+    <!-- include the bootstap style sheet -->
+    <link rel="stylesheet"  type="text/css"
+          href="/bower_components/bootstrap-css/css/bootstrap.min.css">
+    <!-- include the syntax highlight style sheet -->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/css/syntax.css" >
+    <!-- include the customized style sheet -->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/css/customize.css">
+    <!-- add the page specified style sheet settings -->
+
+    
+
+    <!-- jquery -->
+    <script type="text/javascript"
+            src="/bower_components/jqueryjs/jquery.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript"
+            src="/bower_components/bootstrap-css/js/bootstrap.min.js"></script>
+
+    <!-- handle the DOM ready event, compatible with different browsers. -->
+    <script type="text/javascript"
+            src="/bower_components/domready/ready.min.js"></script>
+    <!-- support the extended regular expression -->
+    <script type="text/javascript"
+            src="/bower_components/xregexp/min/xregexp-all-min.js"></script>
+    <!-- fix the extra spaces between CJK characters introduced by the line
+         break in the source -->
+    <script type="text/javascript"
+            src="/bower_components/fix-cjk-linebreak/fix-cjk-linebreak.js"></script>
+
+    <!-- other customied scripts -->
+    <script type="text/javascript"
+            src="/js/customize.js"></script>
+
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ['$', '$'] ],
+			displayMath: [ ['$$', '$$']],
+			processEscapes: true,
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+		},
+		messageStyle: "none",
+		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+	</script>
+	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+    
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container-narrow">
+      <a class="brand" href="/">Ifeoma Veronica Nwabufo</a>
+      <ul class="nav pull-right">
+        
+           
+             
+
+
+
+
+
+<li>
+  <a href="/index.html">Home</a>
+</li>
+
+           
+        
+           
+             
+
+
+
+
+
+<li>
+  <a href="/projects.html">Projects</a>
+</li>
+
+           
+        
+           
+             
+
+
+
+
+
+<li>
+  <a href="/publications.html">Publications</a>
+</li>
+
+           
+        
+           
+             
+
+
+
+
+
+<li>
+  <a href="/cv.html">Curriculum Vitae</a>
+</li>
+
+           
+        
+        
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container-narrow">
+      <div class="content">
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<div class="page-header">
+  <h1>Python Ipdb Cheatsheet
+      </h1>
+</div>
+
+<div class="post-info">
+  
+<link rel="stylesheet" href="/glyphicons/css/glyphicons.css">
+<div class="category-info">
+  <ul class="tag_box inline">
+  
+    <li><i class="icon-folder-open"></i></li>
+    
+    
+
+
+  
+     
+    	<li><a href="/coding.html">
+    		coding <sup></sup>
+    	</a></li>
+    
+  
+
+
+    
+  
+    <li><i class="icon-tags"></i></li>
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#python-ref">python <sup></sup></a></li>
+    
+  
+
+
+
+    
+  </ul>
+</div>
+  
+
+<div class="source-info">
+  <p>
+  <span class="date"></span>
+  &nbsp
+  
+  </p>
+</div>
+
+</div>
+<div id="post-content" class="post-content">
+   <ul id="markdown-toc">
+  <li><a href="#command-cheatsheet" id="markdown-toc-command-cheatsheet">Command CheatSheet</a>    <ul>
+      <li><a href="#help" id="markdown-toc-help"><code class="highlighter-rouge">h(elp)</code></a></li>
+      <li><a href="#where" id="markdown-toc-where"><code class="highlighter-rouge">w(here)</code></a></li>
+      <li><a href="#down" id="markdown-toc-down"><code class="highlighter-rouge">d(own)</code></a></li>
+      <li><a href="#up" id="markdown-toc-up"><code class="highlighter-rouge">u(p)</code></a></li>
+      <li><a href="#break--filenamelineno--function--condition-" id="markdown-toc-break--filenamelineno--function--condition-"><code class="highlighter-rouge">b(reak)</code>: <code class="highlighter-rouge">[ ([filename:]lineno | function) [, condition] ]</code></a></li>
+      <li><a href="#tbreak--filenamelineno--function--condition-" id="markdown-toc-tbreak--filenamelineno--function--condition-"><code class="highlighter-rouge">tbreak</code>: <code class="highlighter-rouge">[ ([filename:]lineno | function) [, condition] ]</code></a></li>
+      <li><a href="#clear-bpnumber-bpnumber--" id="markdown-toc-clear-bpnumber-bpnumber--"><code class="highlighter-rouge">cl(ear)</code>: <code class="highlighter-rouge">[bpnumber [bpnumber ...] ]</code></a></li>
+      <li><a href="#disable-bpnumber-bpnumber-" id="markdown-toc-disable-bpnumber-bpnumber-"><code class="highlighter-rouge">disable bpnumber</code>: <code class="highlighter-rouge">[bpnumber ...]</code></a></li>
+      <li><a href="#enable-bpnumber-bpnumber-" id="markdown-toc-enable-bpnumber-bpnumber-"><code class="highlighter-rouge">enable bpnumber</code>: <code class="highlighter-rouge">[bpnumber ...]</code></a></li>
+      <li><a href="#ignore-bpnumber-count" id="markdown-toc-ignore-bpnumber-count"><code class="highlighter-rouge">ignore bpnumber count</code></a></li>
+      <li><a href="#condition-bpnumber-condition" id="markdown-toc-condition-bpnumber-condition"><code class="highlighter-rouge">condition bpnumber condition</code></a></li>
+      <li><a href="#step" id="markdown-toc-step"><code class="highlighter-rouge">s(tep)</code></a></li>
+      <li><a href="#next" id="markdown-toc-next"><code class="highlighter-rouge">n(ext)</code></a></li>
+      <li><a href="#until" id="markdown-toc-until"><code class="highlighter-rouge">unt(il)</code></a></li>
+      <li><a href="#return" id="markdown-toc-return"><code class="highlighter-rouge">r(eturn)</code></a></li>
+      <li><a href="#run-args-" id="markdown-toc-run-args-"><code class="highlighter-rouge">run [args ...]</code></a></li>
+      <li><a href="#continue" id="markdown-toc-continue"><code class="highlighter-rouge">c(ont(inue))</code></a></li>
+      <li><a href="#list-first-last" id="markdown-toc-list-first-last"><code class="highlighter-rouge">l(ist)</code>: <code class="highlighter-rouge">[first [,last]]</code></a></li>
+      <li><a href="#args" id="markdown-toc-args"><code class="highlighter-rouge">a(rgs)</code></a></li>
+      <li><a href="#p-expression" id="markdown-toc-p-expression"><code class="highlighter-rouge">p expression</code></a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="command-cheatsheet">Command CheatSheet</h3>
+
+<h4 id="help"><code class="highlighter-rouge">h(elp)</code></h4>
+<p>Without argument, print the list of available commands. With a command name as argument, print help about that command.</p>
+
+<h4 id="where"><code class="highlighter-rouge">w(here)</code></h4>
+<p>Print a stack trace, with the most recent frame at the bottom. An arrow indicates the “current frame”, which determines the context of most commands.</p>
+
+<h4 id="down"><code class="highlighter-rouge">d(own)</code></h4>
+<p>Move the current frame one level down in the stack trace (to a newer frame).</p>
+
+<h4 id="up"><code class="highlighter-rouge">u(p)</code></h4>
+<p>Move the current frame one level up in the stack trace (to an older frame).</p>
+
+<h4 id="break--filenamelineno--function--condition-"><code class="highlighter-rouge">b(reak)</code>: <code class="highlighter-rouge">[ ([filename:]lineno | function) [, condition] ]</code></h4>
+<p>With a filename:line number argument, set a break there. If filename is omitted, use the current file. With a function name, set a break at the first executable line of that function. Without argument, list all breaks. Each breakpoint is assigned a number to which all the other breakpoint commands refer.</p>
+
+<p>The condition argument, if present, is a string which must evaluate to true in order for the breakpoint to be honored.</p>
+
+<h4 id="tbreak--filenamelineno--function--condition-"><code class="highlighter-rouge">tbreak</code>: <code class="highlighter-rouge">[ ([filename:]lineno | function) [, condition] ]</code></h4>
+<p>Temporary breakpoint, which is removed automatically when it is first hit. The arguments are the same as break.</p>
+
+<h4 id="clear-bpnumber-bpnumber--"><code class="highlighter-rouge">cl(ear)</code>: <code class="highlighter-rouge">[bpnumber [bpnumber ...] ]</code></h4>
+<p>With a space separated list of breakpoint numbers, clear those breakpoints. Without argument, clear all breaks (but first ask confirmation).</p>
+
+<h4 id="disable-bpnumber-bpnumber-"><code class="highlighter-rouge">disable bpnumber</code>: <code class="highlighter-rouge">[bpnumber ...]</code></h4>
+<p>Disables the breakpoints given as a space separated list of breakpoint numbers. Disabling a breakpoint means it cannot cause the program to stop execution, but unlike clearing a breakpoint, it remains in the list of breakpoints and can be (re-)enabled.</p>
+
+<h4 id="enable-bpnumber-bpnumber-"><code class="highlighter-rouge">enable bpnumber</code>: <code class="highlighter-rouge">[bpnumber ...]</code></h4>
+<p>Enables the breakpoints specified.</p>
+
+<h4 id="ignore-bpnumber-count"><code class="highlighter-rouge">ignore bpnumber count</code></h4>
+<p>Sets the ignore count for the given breakpoint number. If count is omitted, the ignore count is set to 0. A breakpoint becomes active when the ignore count is zero. When non-zero, the count is decremented each time the breakpoint is reached and the breakpoint is not disabled and any associated condition evaluates to true.</p>
+
+<h4 id="condition-bpnumber-condition"><code class="highlighter-rouge">condition bpnumber condition</code></h4>
+<p>condition is an expression which must evaluate to true before the breakpoint is honored. If condition is absent, any existing condition is removed; i.e., the breakpoint is made unconditional.</p>
+
+<h4 id="step"><code class="highlighter-rouge">s(tep)</code></h4>
+<p>Execute the current line, stop at the first possible occasion (either in a function that is called or in the current function).</p>
+
+<h4 id="next"><code class="highlighter-rouge">n(ext)</code></h4>
+<p>Continue execution until the next line in the current function is reached or it returns.</p>
+
+<h4 id="until"><code class="highlighter-rouge">unt(il)</code></h4>
+<p>Continue execution until the line with a number greater than the current one is reached or until the current frame returns.</p>
+
+<h4 id="return"><code class="highlighter-rouge">r(eturn)</code></h4>
+<p>Continue execution until the current function returns.</p>
+
+<h4 id="run-args-"><code class="highlighter-rouge">run [args ...]</code></h4>
+<p>Restart the debugged python program. If a string is supplied it is splitted with “shlex”, and the result is used as the new sys.argv. History, breakpoints, actions and debugger options are preserved. “restart” is an alias for “run”.</p>
+
+<h4 id="continue"><code class="highlighter-rouge">c(ont(inue))</code></h4>
+<p>Continue execution, only stop when a breakpoint is encountered.</p>
+
+<h4 id="list-first-last"><code class="highlighter-rouge">l(ist)</code>: <code class="highlighter-rouge">[first [,last]]</code></h4>
+<p>List source code for the current file. Without arguments, list 11 lines around the current line or continue the previous listing. With one argument, list 11 lines starting at that line. With two arguments, list the given range; if the second argument is less than the first, it is a count.</p>
+
+<h4 id="args"><code class="highlighter-rouge">a(rgs)</code></h4>
+<p>Print the argument list of the current function.</p>
+
+<h4 id="p-expression"><code class="highlighter-rouge">p expression</code></h4>
+<p>Print the value of the expression.</p>
+
+   
+
+</div>
+<script type="text/javascript">
+  var el = document.getElementById("post-content");
+  fix_cjk_linebreak(el);
+  fix_table_style(el);
+</script>
+<div class="sharing align-right">
+  <!--
+
+  
+    
+        <div id="fb-root inline"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-like inline" 
+     data-href="/archive/trash/2017-07-12-ipdb-cheat-sheet.html" 
+     
+     data-layout="button_count" 
+     
+     
+     data-width="90" 
+     
+     
+     data-show-faces="false" 
+     
+     data-send="false">
+</div>
+      
+  
+    
+        <div class="g-plusone inline"
+      data-size="medium" 
+      data-annotation="bubble" 
+      
+      data-width="20"
+      
+></div>
+
+<script type="text/javascript">
+(function() {
+  var po = document.createElement('script'); 
+  po.type = 'text/javascript';
+  po.async = true;
+  po.src = 'https://apis.google.com/js/plusone.js';
+  var s = document.getElementsByTagName('script')[0]; 
+  s.parentNode.insertBefore(po, s);
+})();
+</script>
+
+      
+  
+
+-->
+</div>
+<div class="align-center">
+  
+
+<link rel="stylesheet" href="/glyphicons/css/glyphicons.css" />
+
+<div class="pagination">
+  <ul>
+  
+    <li class="prev disabled">
+      <a> <em class="icon-left-arrow"></em> </a>
+    </li>
+  
+    <li>
+      <a href="/archive.html">&nbsp;&nbsp;<em class="icon-more-items"></em>&nbsp;&nbsp;</a>
+    </li>
+  
+    <li class="next disabled">
+      <a> <em class="icon-right-arrow"></em> </a>
+    </li>
+  
+  </ul>
+</div>
+</div>
+<hr/>
+
+
+<a href="#" class="back-to-top">Back to Top</a>
+<style>
+a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: #eee url("images/angle-up.svg") no-repeat center 40%;
+    background-size: 35px 35px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+</style>
+
+<script type="text/javascript">
+    $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+    var amountScrolled = 10;
+    var duration = 300;
+    $(window).scroll(function() {
+        if ( $(window).scrollTop() > amountScrolled ) {
+            $('a.back-to-top').fadeIn('slow');
+        } else {
+            $('a.back-to-top').fadeOut('slow');
+        }
+    });
+
+    jQuery('.back-to-top').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      return false;
+    })
+</script>
+
+<script type="text/javascript">
+function dashangToggle()
+{
+  $(".shang_box").fadeToggle();
+}
+function changeItem(i)
+{
+  var k = 3;
+  for(var j = 0;j < k;j++)
+  {
+    if(j == i)
+    {
+      document.getElementById("sl_shang" + j).style.display = "block";
+    }
+    else
+    {
+      document.getElementById("sl_shang" + j).style.display = "none";
+    }
+  }
+}
+function opay()
+{
+  document.getElementById("sl_shang").target="_parent";
+}
+</script>
+
+<style>
+.sy_shang{
+  clear:both;
+  overflow:hidden;
+}
+.shang_box{
+  width:200px;
+  max-width:98%;
+  height:300px;
+  padding:10px;
+  background-color:#ddd;
+  border-radius:26px;
+  position:inherit;
+  z-index:1000;
+  border:3px dotted #dedede;
+  display:none;
+}
+.dashang{
+  display:block;
+  width:80px;
+  margin:5px auto;
+  height:17px;
+  line-height:14px;
+  padding:10px;
+  background-color:#E74851;
+  color:#fff !important;
+  text-align:center;
+  text-decoration:none;
+  border-radius:10px;
+  font-size:17px;
+  font-style: italic;
+  transition:all 0.3s;
+}
+.dashang:hover
+{
+  opacity:1.2;
+  font-size:18px;
+}
+#sl_shang0,#sl_shang1,#sl_shang2
+{
+  text-align:center;
+}
+#sl_shang0 img,#sl_shang1 img,#sl_shang2 img
+{
+  max-width:180px;
+}
+.sl_shang
+{
+  overflow:hidden;
+}
+.sl_shang b { font-size:18px; }
+.sl_shang ul{ margin-top:10px; clear:both; overflow:hidden; }
+.sl_shang li{ float:left; }
+</style>
+
+<!-- <center>
+<div class="sy_shang">
+  <a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">
+    <table>
+      <col width="50%">
+      <col width="50%">
+      <tr>
+        <td align="center" valign="top"><em class="icon-coins"></em></td>
+        <td align="right" valign="top">Donate</td>
+      </tr>
+    </table>
+  </a>
+
+<div class="shang_box">
+  <a href="javascript:void(0)" onclick="dashangToggle()" title="关闭" style="float:right;"><em class="icon-remove-2"></em></a>
+
+<div id="sl_shang" onsubmit="return postcheck()">
+  <div class="sl_shang">
+    <i>How to Donate:</i>
+    <table width="80%">
+      <col width="50%">
+      <col width="50%">
+    <tr>
+      <td align="center" valign="middle"><input type="radio" name="paytype" onclick="opay();return changeItem(0);" checked="checked"/>
+        </td>
+      <td align="center" valign="bottom"><input type="radio" name="paytype" onclick="opay();return changeItem(1);" />
+        </td>
+      </tr>
+    <tr>
+      <td align="center" valign="middle"> Alipay </td>
+      <td align="center" valign="middle"> WeChat </td>
+    </tr>
+    </table>
+  </div>
+
+<div id="sl_shang0">
+  <img src="images/alipay.jpg">
+  <br> Open Alipay and Scan
+</div>
+
+<div id="sl_shang1" style="display:none;">
+  <img src="images/wechat.jpg">
+  <br> Open WeChat and Scan
+</div>
+
+</center> -->
+
+      </div>
+      <hr/>
+      <!--
+
+<div style='text-align:center;'>
+  <p>&copy; 2022 Ifeoma Veronica Nwabufo
+    with help from <a href="http://jekyllbootstrap.com"
+                      target="_blank"
+                      title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+    and <a href="http://twitter.github.com/bootstrap/"
+           target="_blank">Twitter Bootstrap</a>
+    <br/>
+    <a rel="license" class="cc-logo" target="_blank" href="">
+      
+    </a>
+    This work is licensed under a
+    <a rel="license" target="_blank" href="">
+      Creative Commons License
+    </a>
+  </p>
+</div>
+-->
+    </div>
+    
+  <div style="display:none;">
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=100&d=t7DslErsFCxmkrmJJEHTOzpoZGpkDt1-vHFIeXzC0gc&t=n'></script>
+  </div>
+  </body>
+</html>
+
+
+

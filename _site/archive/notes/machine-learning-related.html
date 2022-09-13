@@ -1,0 +1,732 @@
+
+
+<!DOCTYPE html>
+<html >
+
+  <head>
+
+    
+    
+
+<meta charset="utf-8"/>
+<meta name="author" content="Ifeoma Veronica Nwabufo"/>
+
+
+<meta name="keywords" content="special"/>
+
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- atom & rss feed -->
+<link href="" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed"/>
+
+<!--
+<link href="" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed"/>
+-->
+
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+    
+	<!--
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ['\(', '\)'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+-->
+    <title>Machine Learning Releated Concepts - Ifeoma Veronica Nwabufo's Website</title>
+
+    <!-- normalize.css -->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/bower_components/normalize-css/normalize.css" >
+    <!-- include the bootstap style sheet -->
+    <link rel="stylesheet"  type="text/css"
+          href="/bower_components/bootstrap-css/css/bootstrap.min.css">
+    <!-- include the syntax highlight style sheet -->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/css/syntax.css" >
+    <!-- include the customized style sheet -->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/css/customize.css">
+    <!-- add the page specified style sheet settings -->
+
+    
+
+    <!-- jquery -->
+    <script type="text/javascript"
+            src="/bower_components/jqueryjs/jquery.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript"
+            src="/bower_components/bootstrap-css/js/bootstrap.min.js"></script>
+
+    <!-- handle the DOM ready event, compatible with different browsers. -->
+    <script type="text/javascript"
+            src="/bower_components/domready/ready.min.js"></script>
+    <!-- support the extended regular expression -->
+    <script type="text/javascript"
+            src="/bower_components/xregexp/min/xregexp-all-min.js"></script>
+    <!-- fix the extra spaces between CJK characters introduced by the line
+         break in the source -->
+    <script type="text/javascript"
+            src="/bower_components/fix-cjk-linebreak/fix-cjk-linebreak.js"></script>
+
+    <!-- other customied scripts -->
+    <script type="text/javascript"
+            src="/js/customize.js"></script>
+
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ['$', '$'] ],
+			displayMath: [ ['$$', '$$']],
+			processEscapes: true,
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+		},
+		messageStyle: "none",
+		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+	</script>
+	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+    
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container-narrow">
+      <a class="brand" href="/">Ifeoma Veronica Nwabufo</a>
+      <ul class="nav pull-right">
+        
+           
+             
+
+
+
+
+
+<li>
+  <a href="/index.html">Home</a>
+</li>
+
+           
+        
+           
+             
+
+
+
+
+
+<li>
+  <a href="/projects.html">Projects</a>
+</li>
+
+           
+        
+           
+             
+
+
+
+
+
+<li>
+  <a href="/publications.html">Publications</a>
+</li>
+
+           
+        
+           
+             
+
+
+
+
+
+<li>
+  <a href="/cv.html">Curriculum Vitae</a>
+</li>
+
+           
+        
+        
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container-narrow">
+      <div class="content">
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<div class="page-header">
+  <h1>Machine Learning Releated Concepts
+      </h1>
+</div>
+
+<div class="post-info">
+  
+<link rel="stylesheet" href="/glyphicons/css/glyphicons.css">
+<div class="category-info">
+  <ul class="tag_box inline">
+  
+    <li><i class="icon-folder-open"></i></li>
+    
+    
+
+
+  
+     
+    	<li><a href="/hidden.html">
+    		hidden <sup></sup>
+    	</a></li>
+    
+  
+
+
+    
+  
+    <li><i class="icon-tags"></i></li>
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#special-ref">special <sup></sup></a></li>
+    
+  
+
+
+
+    
+  </ul>
+</div>
+  
+
+<div class="source-info">
+  <p>
+  <span class="date"></span>
+  &nbsp
+  
+  </p>
+</div>
+
+</div>
+<div id="post-content" class="post-content">
+   <ul id="markdown-toc">
+  <li><a href="#accuracy-准确率-precision-精确率-recall-召回率" id="markdown-toc-accuracy-准确率-precision-精确率-recall-召回率">Accuracy (准确率), Precision (精确率), Recall (召回率)</a>    <ul>
+      <li><a href="#accurary" id="markdown-toc-accurary">Accurary</a></li>
+      <li><a href="#precision" id="markdown-toc-precision">Precision</a></li>
+      <li><a href="#recall" id="markdown-toc-recall">Recall</a></li>
+      <li><a href="#an-example-original-webpage" id="markdown-toc-an-example-original-webpage">An Example (Original webpage)</a></li>
+    </ul>
+  </li>
+  <li><a href="#overfitting-and-underfitting" id="markdown-toc-overfitting-and-underfitting">Overfitting and Underfitting</a>    <ul>
+      <li><a href="#overfitting" id="markdown-toc-overfitting">Overfitting</a></li>
+      <li><a href="#underfitting" id="markdown-toc-underfitting">Underfitting</a></li>
+      <li><a href="#example-to-explain-black-bird" id="markdown-toc-example-to-explain-black-bird">Example to Explain: Black Bird</a></li>
+    </ul>
+  </li>
+  <li><a href="#k-means-and-gmm" id="markdown-toc-k-means-and-gmm">K-Means and GMM</a>    <ul>
+      <li><a href="#for-k-means-k-is-specified" id="markdown-toc-for-k-means-k-is-specified">For K-Means, $K$ is specified.</a>        <ul>
+          <li><a href="#algorithm" id="markdown-toc-algorithm">Algorithm:</a></li>
+        </ul>
+      </li>
+      <li><a href="#for-gmm-its-number-of-components-k-is-also-specified" id="markdown-toc-for-gmm-its-number-of-components-k-is-also-specified">For GMM, its number of components $K$ is also specified.</a>        <ul>
+          <li><a href="#bayesian-theory" id="markdown-toc-bayesian-theory">Bayesian Theory</a></li>
+          <li><a href="#algorithm-1" id="markdown-toc-algorithm-1">Algorithm:</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="accuracy-准确率-precision-精确率-recall-召回率">Accuracy (准确率), Precision (精确率), Recall (召回率)</h3>
+<div align="center">
+	<img style="height: 150px" src="./measure-classifier.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="height: 150px" src="./measure-table.jpg" />
+</div>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align}
+P &= TP + FP \newline \nonumber
+N &= FN + TN \newline \nonumber
+T &= TP + FN \newline \nonumber
+F &= FP + TN \newline \nonumber
+\end{align} %]]></script>
+
+<h4 id="accurary">Accurary</h4>
+<p>Normally in our model testing, we use accuracy to measure the performance of the model. It calculates the “correctness” of the model.</p>
+
+<script type="math/tex; mode=display">\text{Accuracy} = \text{Correctness} = \frac{TP + TN}{\text{All}} = \frac{TP + TN}{TP + TN + FP + FN}</script>
+
+<p>Similarly, we also use “Error Rate” to refer $1 - \text{Accuracy}$.</p>
+
+<h4 id="precision">Precision</h4>
+<p>If we talk about the term “Precision” in machine learning, it refers to the ratio of the number of TP over the number of samples classified as Positive.</p>
+
+<script type="math/tex; mode=display">\text{Precision} = \frac{TP}{P} = \frac{TP}{TP + FP}</script>
+
+<h4 id="recall">Recall</h4>
+<p>Recall refers to the ratio of the number of TP over the number of True samples.</p>
+
+<script type="math/tex; mode=display">\text{Recall} = \frac{TP}{T} = \frac{TP}{TP + FN}</script>
+
+<h4 id="an-example-original-webpage">An Example <a href="https://argcv.com/articles/1036.c">(Original webpage)</a></h4>
+<blockquote>
+  <p>假如某个班级有男生80人,女生20人,共计100人.目标是找出所有女生. 现在某人挑选出50个人,其中20人是女生,另外还错误的把30个男生也当作女生挑选出来了. 作为评估者的你需要来评估(evaluation)下他的工作.</p>
+
+</blockquote>
+
+<p>Solution:</p>
+
+<ol>
+  <li>目标：找出所有女生 <code class="highlighter-rouge">=&gt;</code> 女生：True, 男生：False</li>
+  <li>$F = 80, T = 20. P = 50, TP = 20, FP = 30$
+Since $TP + FN = T$, $FN = T - TP = 20 - 20 = 0$. And $F = FP + TN$, $TN = F - FP = 80 - 30 = 50$.</li>
+</ol>
+
+<p>We can get:
+$$\begin{align}
+\text{Precision} &amp; = TP / P = 20 / 50 = 40\% \newline \nonumber
+\text{Recall} &amp; = TP / T = 20 / 20 = 100\% \newline \nonumber
+\text{Accuracy} &amp; = (TP + TN) / All = (20 + 50) / 100 = 70\% \newline \nonumber
+\end{align}$$</p>
+
+<hr />
+
+<h3 id="overfitting-and-underfitting">Overfitting and Underfitting</h3>
+<h4 id="overfitting">Overfitting</h4>
+<p>Given a set of data, we use a model to fit it, or say “to train” it. If the parameters of the model are too many, the model will have too much degree-of-freedom, so that the model fits every details of the training data, but loses its <strong>generalization</strong> to the problem. This case is called “overfitting”.</p>
+
+<p>Two reasons causing overfitting:</p>
+
+<ol>
+  <li>The feature distributions of the training data and validation data are not the identical.</li>
+  <li>The model is too complicated as introduced above, but the training samples are not enough.</li>
+</ol>
+
+<p>The solutions to avoid overfitting:</p>
+
+<ol>
+  <li>
+    <p>Cross validation</p>
+
+    <p>Divide the whole training dataset into two parts, saying 90% as training data, and the rest 10% as validation data. We can do multiple training experiments and each time leave one alone, to cross validate the training and validation dataset. This method is to avoid to learn the local features in training dataset.</p>
+  </li>
+  <li>
+    <p>Regularization</p>
+
+    <p>Regularization refers to adding more constraints to the original training problem, so that reduce the complexity of the model. For example L1 or L2 norm as regularization, to force the sparsity of parameters.</p>
+  </li>
+  <li>More diverse traing samples (data augmentation)
+    <ul>
+      <li>Collect more data from the original domain;</li>
+      <li>Duplicate the existing training data and add noise to them;</li>
+      <li>Estimate the data structure of the training data and synthesize more data with the similar structure.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Early stopping</p>
+
+    <p>Normally if for a continuous several epoches, saying 10, the validation accuracy will not go to a higher accuracy, we think the accuracy will not become better, so we stop the training. The idea is to avoid too much training causing overfitting.</p>
+  </li>
+  <li>
+    <p>Dropout</p>
+
+    <p>For neural network, we randomly unconnect some connections between neurons to add some randomness. This may forget some local patterns the model learned which are not applicable to global data.</p>
+  </li>
+</ol>
+
+<h4 id="underfitting">Underfitting</h4>
+<p>The same as above, given a set of data, we use a model to fit it. However, this time the parameters of the model are not enough, the model will have limited degree-of-freedom, so that the model cannot well fit the training data. This case is called “underfitting”.</p>
+
+<h4 id="example-to-explain-black-bird">Example to Explain: Black Bird</h4>
+<p>Saying you need to build a model to recognize birds out of animals. You have a dataset containing lots of birds, they all have wings, feather and occasionally they are all black. And if your model have two much parameters to fit the dataset, it probaby learns that a bird must be black, so that if you input a white bird, even it has wings and feather the classifier won’t recognize it. In this case, we say the classifier has been overfitted.</p>
+
+<p>Now if you model only contains a parameter about feather, it will result in that the model cannot well distinguish birds from chickens. So two few parameters may cause the model too simple to fit the dataset.</p>
+
+<div align="center">
+	<img width="90%" src="./overfitting.png" />
+</div>
+
+<hr />
+
+<h3 id="k-means-and-gmm">K-Means and GMM</h3>
+<h4 id="for-k-means-k-is-specified">For K-Means, $K$ is specified.</h4>
+<h5 id="algorithm">Algorithm:</h5>
+
+<blockquote>
+  <ol>
+    <li>Initialize $K$ centers ${c_k}$.</li>
+    <li>For each data point $x_i$, calculate its distance to the $K$ centers: $d_{i,k}$, choose the nearest center as its group. So that for each center $c_k$, it has a group of data points $x_{i,k}$.</li>
+    <li>Update the center position: $c_k = \frac{1}{N_k}\sum_i x_{i,k}$, where $N_k$ is the number of $x_{i,k}$</li>
+    <li>Go to Step 2, repeat until $c_k$ only change its position within a threshold.</li>
+  </ol>
+</blockquote>
+
+<h4 id="for-gmm-its-number-of-components-k-is-also-specified">For GMM, its number of components $K$ is also specified.</h4>
+<p>GMM is a generative model. Its meaning is: We have a dataset, and we assume that they are generated from a GMM. So for each data point $x$, it should follow the PDF of GMM:</p>
+
+<script type="math/tex; mode=display">p(x|\theta) = \sum_{k = 1}^K p(k)p(x|k) = \sum_{k = 1}^K \pi_k \mathcal{N}(x|\mu_k,\Sigma_k)</script>
+
+<p>where $\theta$ is all the parameters in the problem: ${\pi_k}, {\mu_k}, {\Sigma_k}$.</p>
+
+<blockquote>
+  <h5 id="bayesian-theory">Bayesian Theory</h5>
+
+  <script type="math/tex; mode=display">p(\theta|x) = \frac{p(x|\theta) p(\theta)}{p(x)}</script>
+
+  <blockquote>
+    <p>Data is generated by the parameter.</p>
+    <ul>
+      <li>Likelihood: <script type="math/tex">p(x \vert \theta)</script>. given parameter, how likely of the data $x$ is generated by the parameter.</li>
+      <li>Prior: <script type="math/tex">p(\theta)</script>.</li>
+      <li>Posterior: <script type="math/tex">p(\theta \vert x)</script>, meaning that given the data $x$, the conditional density of the parameters.</li>
+    </ul>
+  </blockquote>
+</blockquote>
+
+<p>We need to calculate the maximum likelihood function <script type="math/tex">\prod_{i = 1}^N p(x_i \vert \theta)</script>, apply log to it: <script type="math/tex">\sum_{i = 1}^N \log p(x_i \vert \theta)</script>. Since <script type="math/tex">p(x_i \vert \theta)</script> contains adding, so it is difficult to calculate the gradient for parameters. So we follow the two steps like in K-Means.</p>
+
+<h5 id="algorithm-1">Algorithm:</h5>
+
+<ol>
+  <li>Initialize $K$ gaussian distributions, each one has known parameters.</li>
+  <li>
+    <p><strong>(Expectation)</strong> For each data point $x_i$, calculate the probability it belongs to $k$-th component (or generated by $k$-th component).</p>
+
+    <script type="math/tex; mode=display">\gamma(i, k) = \frac{\pi_k\mathcal{N}(x_i|\mu_k,\Sigma_k)}{\sum_{j = 1}^K\pi_j\mathcal{N}(x_i|\mu_j,\Sigma_j)}</script>
+  </li>
+  <li>
+    <p><strong>(Maximization)</strong> Update the component parameter:</p>
+
+    <script type="math/tex; mode=display">% <![CDATA[
+\begin{align}
+\mu_k & = \frac{1}{N_k}\sum_i^N\gamma(i,k)x_i \newline \nonumber
+\Sigma_k & = \frac{1}{N_k}\sum_i^N\gamma(i,k)(x_i - \mu_k)(x_i - \mu_k)^T \newline \nonumber
+N_k & = \sum_{i = 1}^N\gamma(i,k), \pi_k = N_k / N
+\end{align} %]]></script>
+
+    <p>we can interpret that $k$-th component generates $\gamma(i,k)x_i$.</p>
+  </li>
+  <li>Go to Step 2, until converge.</li>
+</ol>
+
+<p>Check pluskid’s blog <a href="http://blog.pluskid.org/?p=39">here</a>.</p>
+
+<hr />
+
+
+   
+
+</div>
+<script type="text/javascript">
+  var el = document.getElementById("post-content");
+  fix_cjk_linebreak(el);
+  fix_table_style(el);
+</script>
+<div class="sharing align-right">
+  <!--
+
+  
+    
+        <div id="fb-root inline"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-like inline" 
+     data-href="/archive/notes/machine-learning-related.html" 
+     
+     data-layout="button_count" 
+     
+     
+     data-width="90" 
+     
+     
+     data-show-faces="false" 
+     
+     data-send="false">
+</div>
+      
+  
+    
+        <div class="g-plusone inline"
+      data-size="medium" 
+      data-annotation="bubble" 
+      
+      data-width="20"
+      
+></div>
+
+<script type="text/javascript">
+(function() {
+  var po = document.createElement('script'); 
+  po.type = 'text/javascript';
+  po.async = true;
+  po.src = 'https://apis.google.com/js/plusone.js';
+  var s = document.getElementsByTagName('script')[0]; 
+  s.parentNode.insertBefore(po, s);
+})();
+</script>
+
+      
+  
+
+-->
+</div>
+<div class="align-center">
+  
+
+<link rel="stylesheet" href="/glyphicons/css/glyphicons.css" />
+
+<div class="pagination">
+  <ul>
+  
+    <li class="prev disabled">
+      <a> <em class="icon-left-arrow"></em> </a>
+    </li>
+  
+    <li>
+      <a href="/archive.html">&nbsp;&nbsp;<em class="icon-more-items"></em>&nbsp;&nbsp;</a>
+    </li>
+  
+    <li class="next disabled">
+      <a> <em class="icon-right-arrow"></em> </a>
+    </li>
+  
+  </ul>
+</div>
+</div>
+<hr/>
+
+
+<a href="#" class="back-to-top">Back to Top</a>
+<style>
+a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: #eee url("images/angle-up.svg") no-repeat center 40%;
+    background-size: 35px 35px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+</style>
+
+<script type="text/javascript">
+    $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+    var amountScrolled = 10;
+    var duration = 300;
+    $(window).scroll(function() {
+        if ( $(window).scrollTop() > amountScrolled ) {
+            $('a.back-to-top').fadeIn('slow');
+        } else {
+            $('a.back-to-top').fadeOut('slow');
+        }
+    });
+
+    jQuery('.back-to-top').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      return false;
+    })
+</script>
+
+<script type="text/javascript">
+function dashangToggle()
+{
+  $(".shang_box").fadeToggle();
+}
+function changeItem(i)
+{
+  var k = 3;
+  for(var j = 0;j < k;j++)
+  {
+    if(j == i)
+    {
+      document.getElementById("sl_shang" + j).style.display = "block";
+    }
+    else
+    {
+      document.getElementById("sl_shang" + j).style.display = "none";
+    }
+  }
+}
+function opay()
+{
+  document.getElementById("sl_shang").target="_parent";
+}
+</script>
+
+<style>
+.sy_shang{
+  clear:both;
+  overflow:hidden;
+}
+.shang_box{
+  width:200px;
+  max-width:98%;
+  height:300px;
+  padding:10px;
+  background-color:#ddd;
+  border-radius:26px;
+  position:inherit;
+  z-index:1000;
+  border:3px dotted #dedede;
+  display:none;
+}
+.dashang{
+  display:block;
+  width:80px;
+  margin:5px auto;
+  height:17px;
+  line-height:14px;
+  padding:10px;
+  background-color:#E74851;
+  color:#fff !important;
+  text-align:center;
+  text-decoration:none;
+  border-radius:10px;
+  font-size:17px;
+  font-style: italic;
+  transition:all 0.3s;
+}
+.dashang:hover
+{
+  opacity:1.2;
+  font-size:18px;
+}
+#sl_shang0,#sl_shang1,#sl_shang2
+{
+  text-align:center;
+}
+#sl_shang0 img,#sl_shang1 img,#sl_shang2 img
+{
+  max-width:180px;
+}
+.sl_shang
+{
+  overflow:hidden;
+}
+.sl_shang b { font-size:18px; }
+.sl_shang ul{ margin-top:10px; clear:both; overflow:hidden; }
+.sl_shang li{ float:left; }
+</style>
+
+<!-- <center>
+<div class="sy_shang">
+  <a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">
+    <table>
+      <col width="50%">
+      <col width="50%">
+      <tr>
+        <td align="center" valign="top"><em class="icon-coins"></em></td>
+        <td align="right" valign="top">Donate</td>
+      </tr>
+    </table>
+  </a>
+
+<div class="shang_box">
+  <a href="javascript:void(0)" onclick="dashangToggle()" title="关闭" style="float:right;"><em class="icon-remove-2"></em></a>
+
+<div id="sl_shang" onsubmit="return postcheck()">
+  <div class="sl_shang">
+    <i>How to Donate:</i>
+    <table width="80%">
+      <col width="50%">
+      <col width="50%">
+    <tr>
+      <td align="center" valign="middle"><input type="radio" name="paytype" onclick="opay();return changeItem(0);" checked="checked"/>
+        </td>
+      <td align="center" valign="bottom"><input type="radio" name="paytype" onclick="opay();return changeItem(1);" />
+        </td>
+      </tr>
+    <tr>
+      <td align="center" valign="middle"> Alipay </td>
+      <td align="center" valign="middle"> WeChat </td>
+    </tr>
+    </table>
+  </div>
+
+<div id="sl_shang0">
+  <img src="images/alipay.jpg">
+  <br> Open Alipay and Scan
+</div>
+
+<div id="sl_shang1" style="display:none;">
+  <img src="images/wechat.jpg">
+  <br> Open WeChat and Scan
+</div>
+
+</center> -->
+
+      </div>
+      <hr/>
+      <!--
+
+<div style='text-align:center;'>
+  <p>&copy; 2022 Ifeoma Veronica Nwabufo
+    with help from <a href="http://jekyllbootstrap.com"
+                      target="_blank"
+                      title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+    and <a href="http://twitter.github.com/bootstrap/"
+           target="_blank">Twitter Bootstrap</a>
+    <br/>
+    <a rel="license" class="cc-logo" target="_blank" href="">
+      
+    </a>
+    This work is licensed under a
+    <a rel="license" target="_blank" href="">
+      Creative Commons License
+    </a>
+  </p>
+</div>
+-->
+    </div>
+    
+  <div style="display:none;">
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=100&d=t7DslErsFCxmkrmJJEHTOzpoZGpkDt1-vHFIeXzC0gc&t=n'></script>
+  </div>
+  </body>
+</html>
+
+
+

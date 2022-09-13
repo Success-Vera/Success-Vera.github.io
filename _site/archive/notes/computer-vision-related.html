@@ -1,0 +1,691 @@
+
+
+<!DOCTYPE html>
+<html >
+
+  <head>
+
+    
+    
+
+<meta charset="utf-8"/>
+<meta name="author" content="Ifeoma Veronica Nwabufo"/>
+
+
+<meta name="keywords" content="special"/>
+
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- atom & rss feed -->
+<link href="" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed"/>
+
+<!--
+<link href="" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed"/>
+-->
+
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+    
+	<!--
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ['\(', '\)'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+-->
+    <title>Computer Vision Releated Concepts - Ifeoma Veronica Nwabufo's Website</title>
+
+    <!-- normalize.css -->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/bower_components/normalize-css/normalize.css" >
+    <!-- include the bootstap style sheet -->
+    <link rel="stylesheet"  type="text/css"
+          href="/bower_components/bootstrap-css/css/bootstrap.min.css">
+    <!-- include the syntax highlight style sheet -->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/css/syntax.css" >
+    <!-- include the customized style sheet -->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/css/customize.css">
+    <!-- add the page specified style sheet settings -->
+
+    
+
+    <!-- jquery -->
+    <script type="text/javascript"
+            src="/bower_components/jqueryjs/jquery.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript"
+            src="/bower_components/bootstrap-css/js/bootstrap.min.js"></script>
+
+    <!-- handle the DOM ready event, compatible with different browsers. -->
+    <script type="text/javascript"
+            src="/bower_components/domready/ready.min.js"></script>
+    <!-- support the extended regular expression -->
+    <script type="text/javascript"
+            src="/bower_components/xregexp/min/xregexp-all-min.js"></script>
+    <!-- fix the extra spaces between CJK characters introduced by the line
+         break in the source -->
+    <script type="text/javascript"
+            src="/bower_components/fix-cjk-linebreak/fix-cjk-linebreak.js"></script>
+
+    <!-- other customied scripts -->
+    <script type="text/javascript"
+            src="/js/customize.js"></script>
+
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ['$', '$'] ],
+			displayMath: [ ['$$', '$$']],
+			processEscapes: true,
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+		},
+		messageStyle: "none",
+		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+	</script>
+	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+    
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container-narrow">
+      <a class="brand" href="/">Ifeoma Veronica Nwabufo</a>
+      <ul class="nav pull-right">
+        
+           
+             
+
+
+
+
+
+<li>
+  <a href="/index.html">Home</a>
+</li>
+
+           
+        
+           
+             
+
+
+
+
+
+<li>
+  <a href="/projects.html">Projects</a>
+</li>
+
+           
+        
+           
+             
+
+
+
+
+
+<li>
+  <a href="/publications.html">Publications</a>
+</li>
+
+           
+        
+           
+             
+
+
+
+
+
+<li>
+  <a href="/cv.html">Curriculum Vitae</a>
+</li>
+
+           
+        
+        
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container-narrow">
+      <div class="content">
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<div class="page-header">
+  <h1>Computer Vision Releated Concepts
+      </h1>
+</div>
+
+<div class="post-info">
+  
+<link rel="stylesheet" href="/glyphicons/css/glyphicons.css">
+<div class="category-info">
+  <ul class="tag_box inline">
+  
+    <li><i class="icon-folder-open"></i></li>
+    
+    
+
+
+  
+     
+    	<li><a href="/hidden.html">
+    		hidden <sup></sup>
+    	</a></li>
+    
+  
+
+
+    
+  
+    <li><i class="icon-tags"></i></li>
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#special-ref">special <sup></sup></a></li>
+    
+  
+
+
+
+    
+  </ul>
+</div>
+  
+
+<div class="source-info">
+  <p>
+  <span class="date"></span>
+  &nbsp
+  
+  </p>
+</div>
+
+</div>
+<div id="post-content" class="post-content">
+   <ul id="markdown-toc">
+  <li><a href="#3d-vision" id="markdown-toc-3d-vision">3D Vision</a>    <ul>
+      <li><a href="#structure-from-motion" id="markdown-toc-structure-from-motion">Structure from Motion</a>        <ul>
+          <li><a href="#what-is-sfm" id="markdown-toc-what-is-sfm">What is SfM?</a></li>
+          <li><a href="#algorithm" id="markdown-toc-algorithm">Algorithm</a></li>
+        </ul>
+      </li>
+      <li><a href="#fundamental-matrix" id="markdown-toc-fundamental-matrix">Fundamental matrix</a></li>
+      <li><a href="#essential-matrix" id="markdown-toc-essential-matrix">Essential matrix</a></li>
+      <li><a href="#solvepnp" id="markdown-toc-solvepnp">SolvePnP</a></li>
+      <li><a href="#homography" id="markdown-toc-homography">Homography</a></li>
+    </ul>
+  </li>
+  <li><a href="#2d-vision" id="markdown-toc-2d-vision">2D Vision</a>    <ul>
+      <li><a href="#klt-tracker-kanade-lucas-tomasi" id="markdown-toc-klt-tracker-kanade-lucas-tomasi">KLT Tracker (Kanade-Lucas-Tomasi)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3d-vision">3D Vision</h2>
+<h3 id="structure-from-motion">Structure from Motion</h3>
+<h4 id="what-is-sfm">What is SfM?</h4>
+<p>Actually the phrase structure from motion is not that accurate for its basic meaning. In my viewpoint, structure <strong>and</strong> motion is more accurate. The process is that, given several images of a scene in multiple views, the algorithm will reconstruct the 3D geometry information of the scene as well as the camera poses of each image. The 3D geometry information of the scene include the point cloud of the feature points, that is the “structure”; The camera poses are actually the “motion” here.</p>
+
+<h4 id="algorithm">Algorithm</h4>
+<p>Input: Multi-view images of the same scene <br />
+Output: the 3D points of features and Cameras’ pose, i.e. $R$ and $t$.</p>
+
+<blockquote>
+  <ol>
+    <li>Feature detection and correspondence</li>
+    <li>Feature points correspondence can derive the fundamental matrix, $x_1^T F x_2 = 0$, where $x$ is the image coordinate. In OpenCV, there is a built-in API
+      <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Matx33d</span> <span class="n">Fmat</span> <span class="o">=</span> <span class="n">findFundamentalMat</span><span class="p">(</span><span class="n">Points2DinCam0</span><span class="p">,</span> <span class="n">Points2DinCam1</span><span class="p">,</span> <span class="n">CV_FM_RANSAC</span><span class="p">);</span>
+</code></pre></div>      </div>
+    </li>
+    <li>Estimate essential matrix $E$, $E = K_1^T F K_2$, where $K$ is the intrinsic matrix of the camera.</li>
+    <li>$E = [t]_\times R$ =&gt; $R$ and $t$. Four possible solutions, only one is okay. (skew-symmetric matrix of a vector $t$, is the matrix representation of the cross product with $t$)</li>
+    <li>Triangulation. (back-projection, minimize the re-projection error with the 3D positions of the 3D points.)</li>
+    <li>After all the views done, bundle adjustment (<a href="http://users.ics.forth.gr/~lourakis/sba/">sba : A Generic Sparse Bundle Adjustment C/C++ Package Based on the Levenberg-Marquardt Algorithm</a>). Non-linear optimization.</li>
+  </ol>
+</blockquote>
+
+<h3 id="fundamental-matrix">Fundamental matrix</h3>
+<p>The fundamental matrix $F$ is $3\times3$, has 7 dof. <br />
+Why?
+There are 9 matrix elements but only their ratio is significant, which leaves 8 dof. In addition the elements satisfy the constraint $\text{def}\ F = 0$ which leaves <strong>7</strong> dof.</p>
+
+<p>Properties:</p>
+
+<blockquote>
+  <ol>
+    <li>$x^TFx = 0$, where $x$ is the pixel coordinate.</li>
+    <li>$\text{rank}(F) = 2$, i.e. $\text{det}(F) = 0$.
+      <ul>
+        <li>8-points algorithms. Same as Essential matrix’s. (only use property 1)</li>
+        <li>7-points algorithms. Property 1 and 2 are involved.</li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+
+<h3 id="essential-matrix">Essential matrix</h3>
+<p>The essential matrix $E$ is $3\times3$, it has five or six degrees of freedom, depending on whether or not it is seen as a projective element. <br />
+Why?
+The rotation matrix $R$ and the translation vector $t$ have three degrees of freedom each, in total six. If the essential matrix is considered as a projective element, however, one degree of freedom related to scalar multiplication must be subtracted leaving five degrees of freedom in total.</p>
+
+<p>Properties:</p>
+
+<blockquote>
+  <ol>
+    <li>$y^TEy = 0$, where $y$ is the normalized image coordinate.</li>
+    <li>$\text{def}\ E = 0$</li>
+    <li>$2EE^TE - \text{tr}(EE^T)E = 0$ (This produces 3 equations, but only 2 independent)
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Eight-point_algorithm">8-points algorithm</a> (only use Property 1):
+          <ol>
+            <li>Formulating a homogeneous linear equation;
+              <p align="center"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b357a2c6c63a8d06bfb4229a5680b3c449937241" alt="equation" width="70%" /></p>
+            </li>
+            <li>Solving the equation; (total least squares problem)</li>
+            <li>Enforcing the internal constraint. (find an optimal $E$ whose singular values follow that two of its singular values are equal and nonzero and the other is zero, and the difference between this optimal $E$ and the $E$ we computed the least.)</li>
+          </ol>
+        </li>
+        <li>5-points algorithm (use all properties):
+          <ol>
+            <li>5 points gives 5 equations of property 1</li>
+            <li>property 2 is one constraint</li>
+            <li>property 3 gives 9 equations, but only two of them are algebraically independent.</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+
+<h3 id="solvepnp">SolvePnP</h3>
+<p>Perspective N Points algorithm is originally derived from the camera perspective model. In this model, the world coordinates of a point $X$ in 3D space and its 2D coordinates in the image plane follows the matrix-equation:</p>
+
+<script type="math/tex; mode=display">s[u_x, u_y, 1]^T = K [R\ |\  t] [X, Y, Z, 1]^T</script>
+
+<ol>
+  <li>In this equation, since we use homogeneous coordinates, it involves two number equations, or we say two constraints. At the same time, since $R$ has DoF of 3, and $t$ has DoF of 3, it means there are 6 variables in the equations. So if we have at least 3 such kind of matrix-equations (each one provides 2 constraints), we can solve this system. Of course, in practice, the number of points may be larger than 3, and we will formulate the problem as a minimization problem, that is to find a pair of $R, t$ such that the difference between left hand side and right hand side can be minimized.</li>
+  <li>At the same time, it is clear to see that in this minimization problem, the variables are not linear to the system, which means it is a non-linear optimization problem. And normally Levenberg-Marquardt iterative algorithm is a good tool to such kind of non-linear optimization problem.</li>
+</ol>
+
+<h3 id="homography">Homography</h3>
+<p>Homography is a transformation between two views of a plane. It is a $3\times3$ matrix up to a scale, so degrees of freedom is 8. It is applied to the homogeneous coordinates of 2D points. (4 points can calculate the result.)</p>
+
+<p>The functions find and return the perspective transformation $H$ between the source and the destination planes:</p>
+
+<script type="math/tex; mode=display">s_i  [x'_i, y'_i, 1]^T \sim H  [x_i, y_i, 1]^T</script>
+
+<p>so that the following back-projection error is minimized,</p>
+
+<script type="math/tex; mode=display">\sum _i \left ( x'_i- \frac{h_{11} x_i + h_{12} y_i + h_{13}}{h_{31} x_i + h_{32} y_i + h_{33}} \right )^2+ \left ( y'_i- \frac{h_{21} x_i + h_{22} y_i + h_{23}}{h_{31} x_i + h_{32} y_i + h_{33}} \right )^2</script>
+
+<p>In this matrix-equation, it actually involves 2 number equations, but the DoF of $H$ is 8, so at least 4 point pairs can solve the problem. In practice, since the equations are not linear, the formulated problem is naturally a non-linear optimization problem, which could be further solved by Levenberg-Marquardt iterative algorithm.</p>
+
+<h2 id="2d-vision">2D Vision</h2>
+<h3 id="klt-tracker-kanade-lucas-tomasi">KLT Tracker (Kanade-Lucas-Tomasi)</h3>
+<p>KLT Tracker is an optical-flow like tracker, for sparse feature points. Given two frames <code class="highlighter-rouge">f1</code> and <code class="highlighter-rouge">f2</code>, of course there are some feature points in <code class="highlighter-rouge">f1</code>, the idea is to find a displacement vector for each feature point in <code class="highlighter-rouge">f1</code>, such that after moving along the displacement vector, the local image at <code class="highlighter-rouge">f2</code> are the most similar to <code class="highlighter-rouge">f1</code>. And this concept is very similar to optical flow, because Optical flow is actually the movement you view in the moving world, and in computer vision, if given 2 frames, the optical flow is the transition between the two frames. That is to say, there is a 2D vector defined at each feature point, representing the displacement of the feature point from frame 1 to frame 2.
+Usually the methods to compute optical flow can be divided into 4 categories:</p>
+
+<ul>
+  <li>Gradient-based</li>
+  <li>Block Matching-based</li>
+  <li>Energy Function-based</li>
+  <li>Phase-based</li>
+</ul>
+
+<p>While in OpenCV, as I know there have been several functions working on it, such as</p>
+
+<ul>
+  <li><code class="highlighter-rouge">calcOpticalFlowPyrLK</code> (sparse) <em class="icon-thumbs-up"></em></li>
+  <li><code class="highlighter-rouge">calcOpticalFlowFarneback</code> (dense)</li>
+  <li><code class="highlighter-rouge">CalcOpticalFlowBM</code> (block matching-based)</li>
+  <li><code class="highlighter-rouge">CalcOpticalFlowHS</code></li>
+  <li><code class="highlighter-rouge">calcOpticalFlowSF</code></li>
+</ul>
+
+<p>The basic idea of LK is</p>
+<p align="center">
+	<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/749d10ea42b4fb5f9955342d8e294bed10b7c8fd" alt="LK1" width="50%" />H.O.T
+</p>
+
+<p>So</p>
+<p align="center">
+	<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dcea639f5b077f0b62fb6b3e80cac328371a197b" alt="LK2" width="20%" />
+</p>
+
+<p>How to read? <em>“The derivative of image $I$ in $x$ axis multiply with the displacement of $x$, plus the derivative of image $I$ in $y$ axis multiply with the displacement of $y$ equals to minus the derivative of image $I$ in time axis.”</em></p>
+
+<p>Usually we assume multiple pixels follow the same $V_x$ and $V_y$, thus with multiple pixels, we have multiple equations making the aforementioned an over-determined equation system, which can be solved by least square method.</p>
+<p align="center">
+	<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4dba1d119546e8fe15ad701c99d0e32595f9a6c8" alt="LK3" width="50%" />
+</p>
+<p>Then $A^TAv = A^Tb$ so we get</p>
+<p align="center">
+	<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7d94a7e72c2c1f8bda30c925e57d543cb4d48145" alt="LK5" width="50%" />
+</p>
+<hr />
+
+
+   
+
+</div>
+<script type="text/javascript">
+  var el = document.getElementById("post-content");
+  fix_cjk_linebreak(el);
+  fix_table_style(el);
+</script>
+<div class="sharing align-right">
+  <!--
+
+  
+    
+        <div id="fb-root inline"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-like inline" 
+     data-href="/archive/notes/computer-vision-related.html" 
+     
+     data-layout="button_count" 
+     
+     
+     data-width="90" 
+     
+     
+     data-show-faces="false" 
+     
+     data-send="false">
+</div>
+      
+  
+    
+        <div class="g-plusone inline"
+      data-size="medium" 
+      data-annotation="bubble" 
+      
+      data-width="20"
+      
+></div>
+
+<script type="text/javascript">
+(function() {
+  var po = document.createElement('script'); 
+  po.type = 'text/javascript';
+  po.async = true;
+  po.src = 'https://apis.google.com/js/plusone.js';
+  var s = document.getElementsByTagName('script')[0]; 
+  s.parentNode.insertBefore(po, s);
+})();
+</script>
+
+      
+  
+
+-->
+</div>
+<div class="align-center">
+  
+
+<link rel="stylesheet" href="/glyphicons/css/glyphicons.css" />
+
+<div class="pagination">
+  <ul>
+  
+    <li class="prev disabled">
+      <a> <em class="icon-left-arrow"></em> </a>
+    </li>
+  
+    <li>
+      <a href="/archive.html">&nbsp;&nbsp;<em class="icon-more-items"></em>&nbsp;&nbsp;</a>
+    </li>
+  
+    <li class="next disabled">
+      <a> <em class="icon-right-arrow"></em> </a>
+    </li>
+  
+  </ul>
+</div>
+</div>
+<hr/>
+
+
+<a href="#" class="back-to-top">Back to Top</a>
+<style>
+a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: #eee url("images/angle-up.svg") no-repeat center 40%;
+    background-size: 35px 35px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+</style>
+
+<script type="text/javascript">
+    $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+    var amountScrolled = 10;
+    var duration = 300;
+    $(window).scroll(function() {
+        if ( $(window).scrollTop() > amountScrolled ) {
+            $('a.back-to-top').fadeIn('slow');
+        } else {
+            $('a.back-to-top').fadeOut('slow');
+        }
+    });
+
+    jQuery('.back-to-top').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      return false;
+    })
+</script>
+
+<script type="text/javascript">
+function dashangToggle()
+{
+  $(".shang_box").fadeToggle();
+}
+function changeItem(i)
+{
+  var k = 3;
+  for(var j = 0;j < k;j++)
+  {
+    if(j == i)
+    {
+      document.getElementById("sl_shang" + j).style.display = "block";
+    }
+    else
+    {
+      document.getElementById("sl_shang" + j).style.display = "none";
+    }
+  }
+}
+function opay()
+{
+  document.getElementById("sl_shang").target="_parent";
+}
+</script>
+
+<style>
+.sy_shang{
+  clear:both;
+  overflow:hidden;
+}
+.shang_box{
+  width:200px;
+  max-width:98%;
+  height:300px;
+  padding:10px;
+  background-color:#ddd;
+  border-radius:26px;
+  position:inherit;
+  z-index:1000;
+  border:3px dotted #dedede;
+  display:none;
+}
+.dashang{
+  display:block;
+  width:80px;
+  margin:5px auto;
+  height:17px;
+  line-height:14px;
+  padding:10px;
+  background-color:#E74851;
+  color:#fff !important;
+  text-align:center;
+  text-decoration:none;
+  border-radius:10px;
+  font-size:17px;
+  font-style: italic;
+  transition:all 0.3s;
+}
+.dashang:hover
+{
+  opacity:1.2;
+  font-size:18px;
+}
+#sl_shang0,#sl_shang1,#sl_shang2
+{
+  text-align:center;
+}
+#sl_shang0 img,#sl_shang1 img,#sl_shang2 img
+{
+  max-width:180px;
+}
+.sl_shang
+{
+  overflow:hidden;
+}
+.sl_shang b { font-size:18px; }
+.sl_shang ul{ margin-top:10px; clear:both; overflow:hidden; }
+.sl_shang li{ float:left; }
+</style>
+
+<!-- <center>
+<div class="sy_shang">
+  <a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">
+    <table>
+      <col width="50%">
+      <col width="50%">
+      <tr>
+        <td align="center" valign="top"><em class="icon-coins"></em></td>
+        <td align="right" valign="top">Donate</td>
+      </tr>
+    </table>
+  </a>
+
+<div class="shang_box">
+  <a href="javascript:void(0)" onclick="dashangToggle()" title="关闭" style="float:right;"><em class="icon-remove-2"></em></a>
+
+<div id="sl_shang" onsubmit="return postcheck()">
+  <div class="sl_shang">
+    <i>How to Donate:</i>
+    <table width="80%">
+      <col width="50%">
+      <col width="50%">
+    <tr>
+      <td align="center" valign="middle"><input type="radio" name="paytype" onclick="opay();return changeItem(0);" checked="checked"/>
+        </td>
+      <td align="center" valign="bottom"><input type="radio" name="paytype" onclick="opay();return changeItem(1);" />
+        </td>
+      </tr>
+    <tr>
+      <td align="center" valign="middle"> Alipay </td>
+      <td align="center" valign="middle"> WeChat </td>
+    </tr>
+    </table>
+  </div>
+
+<div id="sl_shang0">
+  <img src="images/alipay.jpg">
+  <br> Open Alipay and Scan
+</div>
+
+<div id="sl_shang1" style="display:none;">
+  <img src="images/wechat.jpg">
+  <br> Open WeChat and Scan
+</div>
+
+</center> -->
+
+      </div>
+      <hr/>
+      <!--
+
+<div style='text-align:center;'>
+  <p>&copy; 2022 Ifeoma Veronica Nwabufo
+    with help from <a href="http://jekyllbootstrap.com"
+                      target="_blank"
+                      title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+    and <a href="http://twitter.github.com/bootstrap/"
+           target="_blank">Twitter Bootstrap</a>
+    <br/>
+    <a rel="license" class="cc-logo" target="_blank" href="">
+      
+    </a>
+    This work is licensed under a
+    <a rel="license" target="_blank" href="">
+      Creative Commons License
+    </a>
+  </p>
+</div>
+-->
+    </div>
+    
+  <div style="display:none;">
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=100&d=t7DslErsFCxmkrmJJEHTOzpoZGpkDt1-vHFIeXzC0gc&t=n'></script>
+  </div>
+  </body>
+</html>
+
+
+
