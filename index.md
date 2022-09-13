@@ -64,3 +64,6 @@ My research interests include but not limited to:
 
 ### Contacts
 - Email: ifysuccessvera@gmail.com
+
+### Read my blogs
+- Medium: [Ifeoma Veronica Nwabufo](http://ifysuccessvera.medium.com/)

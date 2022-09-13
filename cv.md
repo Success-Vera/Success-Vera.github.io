@@ -16,8 +16,8 @@ lang: zh
 {% assign posts_collate = site.categories.projects %}
 {% include JB/posts_collate %}
 
-CV in [PDF](/archive/ifeoma_nwabufo_cv_.pdf) version.
-
+<!-- CV in [PDF](/archive/ifeoma_nwabufo_cv_.pdf) version. -->
+CV in <a href="/archive/ifeoma_nwabufo_cv_.pdf">PDF</a> version
 ---
 
 # Education
