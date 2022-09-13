@@ -55,7 +55,7 @@ My research interests include but not limited to:
 ---
 
 ### News
-- [August 2022] I am volunteering to teach Python in a skill acquisition programme organised by students from Virgina Tech USA
+- [August 2022] I am volunteering to teach Python in a skill acquisition programme organised by students from Virgina Tech, USA
 - [August 2022] Got accepted into the Google Developers Machine Learning Bootcamp 
 - [June 2022] We won the third prize for our novel idea on Multilingual Question Answering for Low Resource Languages
 
