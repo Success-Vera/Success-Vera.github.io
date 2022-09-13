@@ -30,7 +30,6 @@ CV in [PDF](/archive/ifeoma_nwabufo_cv_.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![aims](/images/aims-senegal.png)
 <img src="images/aims-senegal.png" width="120" height="100" />
 
 </td>
@@ -45,7 +44,7 @@ CV in [PDF](/archive/ifeoma_nwabufo_cv_.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![aims](images/aims-senegal.png)
+<img src="images/aims-senegal.png" width="120" height="100" />
 </td>
 <td></td>
 <td markdown="1">
@@ -59,7 +58,7 @@ CV in [PDF](/archive/ifeoma_nwabufo_cv_.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![kasu-logo](./images/kasu.jpeg)
+<img src="images/kasu.jpeg" width="120" height="100" />
 </td>
 <td></td>
 <td markdown="1">
