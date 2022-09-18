@@ -40,7 +40,7 @@ I am currently a student at the [African Masters of Machine Intelligence](https:
 
 ### Research Interests
 My research interests include but not limited to:
-- Application of Machine Learning to health and finance
+- Application of Machine Learning to health, finance and education
 - Mathematical Epidemiology
 - Mathematical Modelling
 - Image Analysis
