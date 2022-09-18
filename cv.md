@@ -88,7 +88,6 @@ CV in [PDF](archive/ifeoma_nwabufo_cv_.pdf) version.
 #### Libraries
 
 - PyTorch
-- TensorFlow
 </div>
   
 <div class="leftpane1" markdown="1">
