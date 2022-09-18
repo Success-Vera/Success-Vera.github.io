@@ -31,7 +31,10 @@ img {
 
 ### About Me
 
-My name is Ifeoma Veronica Nwabufo. I am currently a student at the [African Masters of Machine Intelligence](https://aimsammi.org/) (AMMI) programme, working towards an Msc in Machine Intelligence sponsored by Facebook and Google. I also did an MSc in Mathematical Sciences at the [African Institute for Mathematical Sciences](https://aims-senegal.org/) (AIMS) in 2020 where I got exposed to the use of computational tools for analysis. I researched on computational learning theory for my MSc thesis and was supervised by Prof. Rehana Patel. Specifically, my MSc project was on "A Combinatorial Characterisation of PAC-Learnability" where I explored a type of learning framework called Probably Approximately Correct Learning. My undergraduate studies was at [Kaduna State University](https://kasu.edu.ng) (KASU), where I researched on "The Transmission Dynamics of Lassa Fever with Control" under the supervision of Dr. Patrick Noah Okolo.
+My name is Ifeoma Veronica Nwabufo. I enjoy writing short stories, talking on events and playing table tennis. Learning is a lifestyle for me. My curious nature makes me learn from books, videos and people. You'd often find me interacting with people as I try to relearn, unlearn and learn. 
+
+
+I am currently a student at the [African Masters of Machine Intelligence](https://aimsammi.org/) (AMMI) programme, working towards an Msc in Machine Intelligence sponsored by Facebook and Google. I also did an MSc in Mathematical Sciences at the [African Institute for Mathematical Sciences](https://aims-senegal.org/) (AIMS) in 2020 where I got exposed to the use of computational tools for analysis. I researched on computational learning theory for my MSc thesis and was supervised by Prof. Rehana Patel. Specifically, my MSc project was on "A Combinatorial Characterisation of PAC-Learnability" where I explored a type of learning framework called Probably Approximately Correct Learning. My undergraduate studies was at [Kaduna State University](https://kasu.edu.ng) (KASU), where I researched on "The Transmission Dynamics of Lassa Fever with Control" under the supervision of Dr. Patrick Noah Okolo.
 
 ---
 
