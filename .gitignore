@@ -1,9 +1,4 @@
 .DS_Store
 steps.txt
-._site/images/*.jpg
+
 _site/images/*.jpg
-_site/images/*.jpg
-._site/images/*.jpg
-._site/images/*.pdf
-._site/images/.DS_Store
-./_site/images/1. ask_questions.pdf
