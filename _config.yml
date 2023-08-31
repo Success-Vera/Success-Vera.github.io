@@ -57,6 +57,8 @@ menuitems:
         url:      /publications.html }
     - { title:    Curriculum Vitae,
         url:      /cv.html}
+    - { title:    Gallery,
+        url:      /gallery.html}
     # - { title:    Blogs,
     #     url:      /archive/index.html}
     # - { title:    Notes,

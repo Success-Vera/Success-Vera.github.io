@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^scholar$ https://scholar.google.com/citations?user=VU1YoC4AAAAJ&hl=en
