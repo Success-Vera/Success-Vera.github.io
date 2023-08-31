@@ -1,6 +1,7 @@
 .DS_Store
 steps.txt
-._site/images/
-_site/images/
-_site/images
-._site/images
+._site/images/*.jpg
+_site/images/*.jpg
+_site/images/*.jpg
+._site/images/*.jpg
+._site/images/*.pdf
