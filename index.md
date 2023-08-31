@@ -62,7 +62,7 @@ My research interests include but not limited to:
 ### News
 - [June 2023] I received a travel and accomodation scholarship to attend the Indaba at Ghana.
 - [April 2023] I started my research fellowship at the University of Tübingen, Germany.
-- [April 2023] Rounded up the first set of students from Data Science Kaduna
+- [April 2023] Rounded up the first set of students from Data Science Kaduna.
 - [January 2023] I started a Data Science group (Data Science Kaduna) with over 400 participants who signed up to learn Data Science.
 - [August 2022] I am volunteering to teach Python in a skill acquisition programme organised by students from Virgina Tech, USA
 - [August 2022] Got accepted into the Google Developers Machine Learning Bootcamp 
