@@ -20,7 +20,7 @@ lang: en
 ----
 This poster is a summary of the use of t-SimCNE on medical images. If you are wondering what this method is all about, you can read the paper [here](https://arxiv.org/abs/2210.09879) or my [blog post](https://ifysuccessvera.medium.com/unsupervised-visualization-of-images-using-t-simcne-23a9ad15f0).
 <table style="width:100%">
-<tr><img src="images/tSimCNE.jpg" width="400" height="100" ></tr>
+<tr><img src="images/final_indaba_v3.jpg" width="400" height="100" ></tr>
 </table>
 
 ----
