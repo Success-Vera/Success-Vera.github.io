@@ -26,7 +26,7 @@ img {
 }
 </style>
 
-<img src="images/ifeoma.jpeg" class="center" style="width:200px">
+<img src="images/passport-ifeoma.png" class="center" style="width:200px">
 
 
 ### About Me
