@@ -31,3 +31,4 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "jekyll-sitemap", "~> 1.4"
 gem 'jekyll-paginate', group: :jekyll_plugins
+gem "webrick", "~> 1.8"
