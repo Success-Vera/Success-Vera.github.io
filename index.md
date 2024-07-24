@@ -33,8 +33,8 @@ img {
 
 My name is Ifeoma Veronica Nwabufo. I enjoy writing short stories, talking on events and playing table tennis. Learning is a lifestyle for me. My curious nature makes me learn from books, videos and people. You'd often find me interacting with people as I try to relearn, unlearn and learn. 
 
-
-I am currently a Research Fellow with Berens Lab at the Hertie Institute for AI in Brain Health in Tübingen, Germany funded by the Cluster of Excellence - Machine Learning for New Perspectives in Science, University of Tübingen. My project is on the visualization of medical images. Specifically, I am using the [t-SimCNE](https://arxiv.org/abs/2210.09879) method. I have also written a [blog](https://ifysuccessvera.medium.com/unsupervised-visualization-of-images-using-t-simcne-23a9ad15f0) on this method which you might want to see.
+I am currently a PhD student at the Hertie Institute for AI in Brain Health in Tübingen, Germany. I am also a scholar at the International Max Planck Research School for Intelligent Systems (IMPRS-IS). I am exploring self-supervised methods for understanding medical images. 
+Before that, I was a Research Fellow at the same institute funded by the Cluster of Excellence - Machine Learning for New Perspectives in Science, University of Tübingen. My project was on the visualization of medical images. Specifically, I am using the <a href="https://arxiv.org/abs/2210.09879">t-SimCNE</a> method. I have also written a <a href="https://ifysuccessvera.medium.com/unsupervised-visualization-of-images-using-t-simcne-23a9ad15f0">blog</a> on this method which you might want to see.
 
 I was a student in the [African Masters of Machine Intelligence](https://aimsammi.org/) (AMMI) programme where I studied for an Msc in Machine Intelligence sponsored by Facebook and Google. I also did an MSc in Mathematical Sciences at the [African Institute for Mathematical Sciences](https://aims-senegal.org/) (AIMS) in 2020 where I got exposed to the use of computational tools for analysis. I researched on computational learning theory for my MSc thesis and was supervised by Prof. Rehana Patel. Specifically, my MSc project was on "A Combinatorial Characterisation of PAC-Learnability" where I explored a type of learning framework called Probably Approximately Correct Learning. My undergraduate studies was at [Kaduna State University](https://kasu.edu.ng) (KASU), where I researched on "The Transmission Dynamics of Lassa Fever with Control" under the supervision of Dr. Patrick Noah Okolo.
 
@@ -42,13 +42,11 @@ I was a student in the [African Masters of Machine Intelligence](https://aimsamm
 
 ### Research Interests
 My research interests include but not limited to:
+- Self-supervised Representation Learning
 - Application of Machine Learning to health, finance and education
 - Mathematical Epidemiology
 - Mathematical Modelling
-- Image Analysis
-- Natural Language Processing 
-    - Multilingual Question Answering for Low Resource Languages
-    - Machine Translation 
+- Image Analysis 
 - Financial Mathematics
 
 ---
@@ -60,6 +58,7 @@ My research interests include but not limited to:
 ---
 
 ### News
+- [January 2024] I started my PhD at the Hertie AI Lab in the University of Tübingen.
 - [June 2023] I received a travel and accomodation scholarship to attend the Indaba at Ghana.
 - [April 2023] I started my research fellowship at the University of Tübingen, Germany.
 - [April 2023] Rounded up the first set of students from Data Science Kaduna.
